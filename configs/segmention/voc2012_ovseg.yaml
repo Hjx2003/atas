@@ -1,0 +1,14 @@
+dataset:
+  voc_root: /data/hujx/ATAS/atas-repro/datasets/voc2012/VOC2012_train_val
+  split: val
+
+model:
+  model_name: ViT-B-16
+  ckpt: /data/hujx/ATAS/atas_me/outputs/pretrain/atas_epoch_6.pt
+  image_size: 224
+
+eval:
+  device: cuda
+  save_pred: true
+  out_dir: outputs/voc2012_ovseg
+  ignore_bg_miou: true
